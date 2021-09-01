@@ -82,7 +82,7 @@ final class AnimeItemViewModelSpec: QuickSpec {
         
         describe("User search by keyword") {
             beforeEach {
-                sut.searchTrigger.accept("Ca")
+                sut.searchTrigger.accept("le")
             }
             it("should presenter will send 1 cellModels") {
                 expect(mockPresenter.invokedAnimeCellViewModelsGetter) == true

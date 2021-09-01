@@ -82,16 +82,11 @@ extension AnimeViewModel {
         
         searchTrigger.subscribeNext { [weak self] query in
             
-            if !query.isEmpty {
-                let list = self?.list.filter({ $0.title?.contains(query) ?? false })
+            let list = self?.list.filter({ $0.title?.lowercased().contains(query.lowercased()) ?? false })
+            if !query.isEmpty && list?.count ?? 0 > 0 {
                 let cellModels = list?.map({ item in
                     AnimeCellViewModel.init(item: item)
                 })
-                self?.presenter?.animeCellViewModels.accept(cellModels ?? [])
-            } else {
-                let cellModels = self?.list.map { item in
-                    AnimeCellViewModel.init(item: item)
-                }
                 self?.presenter?.animeCellViewModels.accept(cellModels ?? [])
             }
         }.disposed(by: disposeBag)
