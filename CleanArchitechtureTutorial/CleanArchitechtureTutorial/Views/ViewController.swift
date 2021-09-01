@@ -9,6 +9,7 @@ import UIKit
 import RxSwift
 import RxCocoa
 import RxDataSources
+import MBProgressHUD
 
 protocol AnimeItemPresentableListener: AnyObject {
     var loadMoreTrigger: PublishRelay<Void> { get }
@@ -20,6 +21,8 @@ class ViewController: UIViewController, AnimeItemPresentable {
     
     @IBOutlet weak private var tableView: UITableView!
     @IBOutlet weak private var searchBar: UISearchBar!
+    
+    private var progressHub: MBProgressHUD?
 
     let viewModel = AnimeViewModel.init(animeRepository: AnimeRepository.init(animeService: AnimeService.init()))
     
@@ -40,9 +43,32 @@ class ViewController: UIViewController, AnimeItemPresentable {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        searchBar.delegate = self
         configureViewModel()
         configureListener()
         configurePresenter()
+    }
+    
+    public func showLoading() {
+        if progressHub == nil {
+            progressHub = MBProgressHUD.showAdded(to: self.view, animated: true)
+        }
+    }
+    
+    public func dismissLoading() {
+        if progressHub != nil {
+            progressHub?.hide(animated: true)
+            progressHub = nil
+        }
+    }
+}
+
+extension ViewController: UISearchBarDelegate {
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.endEditing(true)
+    }
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.endEditing(true)
     }
 }
 

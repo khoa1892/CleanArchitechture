@@ -12,6 +12,7 @@ target 'CleanArchitechtureTutorial' do
   pod 'Alamofire', '~> 4.9.1'
   pod 'ObjectMapper'
   pod 'SDWebImage'
+  pod 'MBProgressHUD', '~> 1.1.0'
 
   # Pods for CleanArchitechtureTutorial
 
