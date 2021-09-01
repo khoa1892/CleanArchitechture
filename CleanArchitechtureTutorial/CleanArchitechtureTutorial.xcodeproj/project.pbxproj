@@ -7,8 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		102C1F7726DF933300799C0B /* AnimeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10826A7126D00A8D005CEDB5 /* AnimeRepository.swift */; };
+		102C1F7826DF933700799C0B /* AnimeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10826A6F26D00A72005CEDB5 /* AnimeService.swift */; };
+		102C1F7926DF933900799C0B /* AnimeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10826A7326D00A9D005CEDB5 /* AnimeViewModel.swift */; };
+		102C1F7A26DF933B00799C0B /* AnimeCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BDA5E126D00F9B00F6E039 /* AnimeCellViewModel.swift */; };
+		102C1F7B26DF933D00799C0B /* Ghibli.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BDA5DF26D00CA900F6E039 /* Ghibli.swift */; };
+		102C1F7C26DF935000799C0B /* AnimeTargets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10826A6D26D00A5F005CEDB5 /* AnimeTargets.swift */; };
+		102C1F7D26DF935B00799C0B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10826A2B26D0065A005CEDB5 /* ViewController.swift */; };
+		102C1F7E26DF936800799C0B /* Requestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10826A5E26D0080D005CEDB5 /* Requestable.swift */; };
+		102C1F7F26DF936B00799C0B /* LoadingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10826A6226D008C7005CEDB5 /* LoadingError.swift */; };
+		102C1F8026DF936D00799C0B /* HTTPStatusCodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10826A6B26D00985005CEDB5 /* HTTPStatusCodes.swift */; };
+		102C1F8126DF937C00799C0B /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103E229626DF372B00947FF7 /* DetailViewController.swift */; };
+		102C1F8226DF938D00799C0B /* GhibliCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103E229426DF260400947FF7 /* GhibliCell.swift */; };
+		102C1F8326DF939500799C0B /* EmptyEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10826A6626D00918005CEDB5 /* EmptyEntity.swift */; };
+		102C1F8426DF939700799C0B /* PagingEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10826A6526D00918005CEDB5 /* PagingEntity.swift */; };
+		102C1F8526DF939A00799C0B /* ResponseEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10826A6726D00918005CEDB5 /* ResponseEntity.swift */; };
+		102C1F8626DF992B00799C0B /* AnimeItemViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103E229F26DF85C000947FF7 /* AnimeItemViewModelSpec.swift */; };
+		102C1F8726DF993000799C0B /* MockAnimeItemPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103E22A126DF872000947FF7 /* MockAnimeItemPresenter.swift */; };
+		102C1F8826DF993200799C0B /* MockAnimeItemRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103E22A326DF875800947FF7 /* MockAnimeItemRouter.swift */; };
+		102C1F8926DF993500799C0B /* MockAnimeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103E229C26DF855A00947FF7 /* MockAnimeService.swift */; };
+		102C1F8A26DF993700799C0B /* MockAnimeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103E229826DF84C500947FF7 /* MockAnimeRepository.swift */; };
+		102C1F8B26DF994D00799C0B /* CleanArchitechtureTutorialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10826A3E26D0065B005CEDB5 /* CleanArchitechtureTutorialTests.swift */; };
 		103E229526DF260400947FF7 /* GhibliCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103E229426DF260400947FF7 /* GhibliCell.swift */; };
 		103E229726DF372B00947FF7 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103E229626DF372B00947FF7 /* DetailViewController.swift */; };
+		103E229926DF84C500947FF7 /* MockAnimeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103E229826DF84C500947FF7 /* MockAnimeRepository.swift */; };
+		103E229D26DF855A00947FF7 /* MockAnimeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103E229C26DF855A00947FF7 /* MockAnimeService.swift */; };
+		103E22A026DF85C000947FF7 /* AnimeItemViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103E229F26DF85C000947FF7 /* AnimeItemViewModelSpec.swift */; };
+		103E22A226DF872000947FF7 /* MockAnimeItemPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103E22A126DF872000947FF7 /* MockAnimeItemPresenter.swift */; };
+		103E22A426DF875800947FF7 /* MockAnimeItemRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103E22A326DF875800947FF7 /* MockAnimeItemRouter.swift */; };
 		10826A2826D0065A005CEDB5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10826A2726D0065A005CEDB5 /* AppDelegate.swift */; };
 		10826A2A26D0065A005CEDB5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10826A2926D0065A005CEDB5 /* SceneDelegate.swift */; };
 		10826A2C26D0065A005CEDB5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10826A2B26D0065A005CEDB5 /* ViewController.swift */; };
@@ -57,6 +83,11 @@
 /* Begin PBXFileReference section */
 		103E229426DF260400947FF7 /* GhibliCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GhibliCell.swift; sourceTree = "<group>"; };
 		103E229626DF372B00947FF7 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		103E229826DF84C500947FF7 /* MockAnimeRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAnimeRepository.swift; sourceTree = "<group>"; };
+		103E229C26DF855A00947FF7 /* MockAnimeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAnimeService.swift; sourceTree = "<group>"; };
+		103E229F26DF85C000947FF7 /* AnimeItemViewModelSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeItemViewModelSpec.swift; sourceTree = "<group>"; };
+		103E22A126DF872000947FF7 /* MockAnimeItemPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAnimeItemPresenter.swift; sourceTree = "<group>"; };
+		103E22A326DF875800947FF7 /* MockAnimeItemRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAnimeItemRouter.swift; sourceTree = "<group>"; };
 		10826A2426D0065A005CEDB5 /* CleanArchitechtureTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CleanArchitechtureTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10826A2726D0065A005CEDB5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		10826A2926D0065A005CEDB5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -133,6 +164,32 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		103E229A26DF852200947FF7 /* MockRepository */ = {
+			isa = PBXGroup;
+			children = (
+				103E229826DF84C500947FF7 /* MockAnimeRepository.swift */,
+			);
+			path = MockRepository;
+			sourceTree = "<group>";
+		};
+		103E229B26DF852B00947FF7 /* MockServices */ = {
+			isa = PBXGroup;
+			children = (
+				103E229C26DF855A00947FF7 /* MockAnimeService.swift */,
+			);
+			path = MockServices;
+			sourceTree = "<group>";
+		};
+		103E229E26DF858200947FF7 /* AnimeListItem */ = {
+			isa = PBXGroup;
+			children = (
+				103E229F26DF85C000947FF7 /* AnimeItemViewModelSpec.swift */,
+				103E22A126DF872000947FF7 /* MockAnimeItemPresenter.swift */,
+				103E22A326DF875800947FF7 /* MockAnimeItemRouter.swift */,
+			);
+			path = AnimeListItem;
+			sourceTree = "<group>";
+		};
 		10826A1B26D0065A005CEDB5 = {
 			isa = PBXGroup;
 			children = (
@@ -178,6 +235,9 @@
 		10826A3D26D0065B005CEDB5 /* CleanArchitechtureTutorialTests */ = {
 			isa = PBXGroup;
 			children = (
+				103E229B26DF852B00947FF7 /* MockServices */,
+				103E229A26DF852200947FF7 /* MockRepository */,
+				103E229E26DF858200947FF7 /* AnimeListItem */,
 				10826A3E26D0065B005CEDB5 /* CleanArchitechtureTutorialTests.swift */,
 				10826A4026D0065B005CEDB5 /* Info.plist */,
 			);
@@ -321,6 +381,7 @@
 				10826A3626D0065B005CEDB5 /* Sources */,
 				10826A3726D0065B005CEDB5 /* Frameworks */,
 				10826A3826D0065B005CEDB5 /* Resources */,
+				9C9F1A2E6A11A7DCDF8A938F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -466,6 +527,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		9C9F1A2E6A11A7DCDF8A938F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CleanArchitechtureTutorialTests/Pods-CleanArchitechtureTutorialTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CleanArchitechtureTutorialTests/Pods-CleanArchitechtureTutorialTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CleanArchitechtureTutorialTests/Pods-CleanArchitechtureTutorialTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		A0D4A71BD299BECCA0009F09 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -532,22 +610,28 @@
 				10826A6826D00918005CEDB5 /* PagingEntity.swift in Sources */,
 				10826A6E26D00A5F005CEDB5 /* AnimeTargets.swift in Sources */,
 				10826A7026D00A72005CEDB5 /* AnimeService.swift in Sources */,
+				102C1F8A26DF993700799C0B /* MockAnimeRepository.swift in Sources */,
 				10BDA5E226D00F9B00F6E039 /* AnimeCellViewModel.swift in Sources */,
 				10BDA5F326D0131200F6E039 /* UIViewController+Rx.swift in Sources */,
 				10826A2C26D0065A005CEDB5 /* ViewController.swift in Sources */,
 				10BDA5F826D0131200F6E039 /* Observable+bind.swift in Sources */,
 				103E229726DF372B00947FF7 /* DetailViewController.swift in Sources */,
 				10826A6926D00918005CEDB5 /* EmptyEntity.swift in Sources */,
+				102C1F8826DF993200799C0B /* MockAnimeItemRouter.swift in Sources */,
 				10826A6A26D00918005CEDB5 /* ResponseEntity.swift in Sources */,
 				103E229526DF260400947FF7 /* GhibliCell.swift in Sources */,
+				102C1F8626DF992B00799C0B /* AnimeItemViewModelSpec.swift in Sources */,
 				10826A7426D00A9D005CEDB5 /* AnimeViewModel.swift in Sources */,
 				10826A6026D0080D005CEDB5 /* Requestable.swift in Sources */,
 				10BDA5E026D00CA900F6E039 /* Ghibli.swift in Sources */,
+				102C1F8B26DF994D00799C0B /* CleanArchitechtureTutorialTests.swift in Sources */,
 				10826A6326D008C7005CEDB5 /* LoadingError.swift in Sources */,
+				102C1F8726DF993000799C0B /* MockAnimeItemPresenter.swift in Sources */,
 				10826A2826D0065A005CEDB5 /* AppDelegate.swift in Sources */,
 				10826A6C26D00985005CEDB5 /* HTTPStatusCodes.swift in Sources */,
 				10BDA5F126D0131200F6E039 /* ScrollView+Rx.swift in Sources */,
 				10826A7226D00A8D005CEDB5 /* AnimeRepository.swift in Sources */,
+				102C1F8926DF993500799C0B /* MockAnimeService.swift in Sources */,
 				10826A2A26D0065A005CEDB5 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -556,7 +640,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				102C1F7926DF933900799C0B /* AnimeViewModel.swift in Sources */,
+				102C1F8126DF937C00799C0B /* DetailViewController.swift in Sources */,
+				102C1F7E26DF936800799C0B /* Requestable.swift in Sources */,
+				102C1F8026DF936D00799C0B /* HTTPStatusCodes.swift in Sources */,
+				102C1F7826DF933700799C0B /* AnimeService.swift in Sources */,
+				102C1F7B26DF933D00799C0B /* Ghibli.swift in Sources */,
+				103E229926DF84C500947FF7 /* MockAnimeRepository.swift in Sources */,
+				102C1F7A26DF933B00799C0B /* AnimeCellViewModel.swift in Sources */,
+				102C1F8426DF939700799C0B /* PagingEntity.swift in Sources */,
+				102C1F8226DF938D00799C0B /* GhibliCell.swift in Sources */,
+				103E229D26DF855A00947FF7 /* MockAnimeService.swift in Sources */,
 				10826A3F26D0065B005CEDB5 /* CleanArchitechtureTutorialTests.swift in Sources */,
+				103E22A226DF872000947FF7 /* MockAnimeItemPresenter.swift in Sources */,
+				102C1F7D26DF935B00799C0B /* ViewController.swift in Sources */,
+				103E22A426DF875800947FF7 /* MockAnimeItemRouter.swift in Sources */,
+				102C1F7C26DF935000799C0B /* AnimeTargets.swift in Sources */,
+				102C1F7F26DF936B00799C0B /* LoadingError.swift in Sources */,
+				102C1F8326DF939500799C0B /* EmptyEntity.swift in Sources */,
+				102C1F8526DF939A00799C0B /* ResponseEntity.swift in Sources */,
+				102C1F7726DF933300799C0B /* AnimeRepository.swift in Sources */,
+				103E22A026DF85C000947FF7 /* AnimeItemViewModelSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

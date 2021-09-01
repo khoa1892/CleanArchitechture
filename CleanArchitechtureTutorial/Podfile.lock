@@ -5,7 +5,9 @@ PODS:
   - Alamofire (4.9.1)
   - Differentiator (4.0.1)
   - MBProgressHUD (1.1.0)
+  - Nimble (9.2.1)
   - ObjectMapper (4.2.0)
+  - Quick (4.0.0)
   - RxCocoa (5.1.1):
     - RxRelay (~> 5)
     - RxSwift (~> 5)
@@ -24,7 +26,9 @@ DEPENDENCIES:
   - Action
   - Alamofire (~> 4.9.1)
   - MBProgressHUD (~> 1.1.0)
+  - Nimble
   - ObjectMapper
+  - Quick
   - RxCocoa (~> 5)
   - RxDataSources
   - RxSwift (~> 5)
@@ -36,7 +40,9 @@ SPEC REPOS:
     - Alamofire
     - Differentiator
     - MBProgressHUD
+    - Nimble
     - ObjectMapper
+    - Quick
     - RxCocoa
     - RxDataSources
     - RxRelay
@@ -48,13 +54,15 @@ SPEC CHECKSUMS:
   Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
   Differentiator: 886080237d9f87f322641dedbc5be257061b0602
   MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
+  Nimble: e7e615c0335ee4bf5b0d786685451e62746117d5
   ObjectMapper: 1eb41f610210777375fa806bf161dc39fb832b81
+  Quick: 6473349e43b9271a8d43839d9ba1c442ed1b7ac4
   RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
   RxDataSources: efee07fa4de48477eca0a4611e6d11e2da9c1114
   RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
   RxSwift: 1e2e1f9570186967f617e49128ed26ccf1bafc8e
   SDWebImage: a7f831e1a65eb5e285e3fb046a23fcfbf08e696d
 
-PODFILE CHECKSUM: e4c1900af11e75dcf0416b6d325781707a8ca58d
+PODFILE CHECKSUM: a952b270a0606fbc26d792461b9a53b6457159cf
 
 COCOAPODS: 1.10.0

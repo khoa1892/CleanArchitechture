@@ -7,7 +7,25 @@
 		<key>CleanArchitechtureTutorial.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>13</integer>
+			<integer>15</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>10826A2326D0065A005CEDB5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>10826A3926D0065B005CEDB5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>10826A4426D0065B005CEDB5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

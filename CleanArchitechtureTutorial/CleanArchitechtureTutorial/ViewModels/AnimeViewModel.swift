@@ -14,7 +14,6 @@ import Action
 protocol AnimeItemPresentable: AnyObject {
     var listener: AnimeItemPresentableListener? { get set }
     var animeCellViewModels: BehaviorRelay<[AnimeCellViewModel]> { get }
-    var isShowEmptyView: BehaviorRelay<Bool> { get }
     var isCanLoadMore: BehaviorRelay<Bool> { get }
 }
 
@@ -23,7 +22,7 @@ protocol AnimeRouting: AnyObject {
     func routeToDetail(_ model: Ghibli)
 }
 
-class AnimeViewModel: AnimeItemPresentableListener {
+final class AnimeViewModel: AnimeItemPresentableListener {
     
     weak var presenter: AnimeItemPresentable?
     weak var router: AnimeRouting?
