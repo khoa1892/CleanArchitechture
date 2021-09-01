@@ -27,7 +27,6 @@
 		102C1F8826DF993200799C0B /* MockAnimeItemRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103E22A326DF875800947FF7 /* MockAnimeItemRouter.swift */; };
 		102C1F8926DF993500799C0B /* MockAnimeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103E229C26DF855A00947FF7 /* MockAnimeService.swift */; };
 		102C1F8A26DF993700799C0B /* MockAnimeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103E229826DF84C500947FF7 /* MockAnimeRepository.swift */; };
-		102C1F8B26DF994D00799C0B /* CleanArchitechtureTutorialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10826A3E26D0065B005CEDB5 /* CleanArchitechtureTutorialTests.swift */; };
 		103E229526DF260400947FF7 /* GhibliCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103E229426DF260400947FF7 /* GhibliCell.swift */; };
 		103E229726DF372B00947FF7 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103E229626DF372B00947FF7 /* DetailViewController.swift */; };
 		103E229926DF84C500947FF7 /* MockAnimeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103E229826DF84C500947FF7 /* MockAnimeRepository.swift */; };
@@ -624,7 +623,6 @@
 				10826A7426D00A9D005CEDB5 /* AnimeViewModel.swift in Sources */,
 				10826A6026D0080D005CEDB5 /* Requestable.swift in Sources */,
 				10BDA5E026D00CA900F6E039 /* Ghibli.swift in Sources */,
-				102C1F8B26DF994D00799C0B /* CleanArchitechtureTutorialTests.swift in Sources */,
 				10826A6326D008C7005CEDB5 /* LoadingError.swift in Sources */,
 				102C1F8726DF993000799C0B /* MockAnimeItemPresenter.swift in Sources */,
 				10826A2826D0065A005CEDB5 /* AppDelegate.swift in Sources */,

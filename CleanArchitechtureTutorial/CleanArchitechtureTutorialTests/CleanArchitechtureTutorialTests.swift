@@ -6,7 +6,7 @@
 //
 
 import XCTest
-import CleanArchitechtureTutorial
+@testable import CleanArchitechtureTutorial
 
 class CleanArchitechtureTutorialTests: XCTestCase {
 
