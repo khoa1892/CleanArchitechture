@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		103E229526DF260400947FF7 /* GhibliCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103E229426DF260400947FF7 /* GhibliCell.swift */; };
+		103E229726DF372B00947FF7 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103E229626DF372B00947FF7 /* DetailViewController.swift */; };
 		10826A2826D0065A005CEDB5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10826A2726D0065A005CEDB5 /* AppDelegate.swift */; };
 		10826A2A26D0065A005CEDB5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10826A2926D0065A005CEDB5 /* SceneDelegate.swift */; };
 		10826A2C26D0065A005CEDB5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10826A2B26D0065A005CEDB5 /* ViewController.swift */; };
@@ -55,6 +56,7 @@
 
 /* Begin PBXFileReference section */
 		103E229426DF260400947FF7 /* GhibliCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GhibliCell.swift; sourceTree = "<group>"; };
+		103E229626DF372B00947FF7 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		10826A2426D0065A005CEDB5 /* CleanArchitechtureTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CleanArchitechtureTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10826A2726D0065A005CEDB5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		10826A2926D0065A005CEDB5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -160,8 +162,8 @@
 				10826A5826D006A1005CEDB5 /* Repositories */,
 				10826A5726D00697005CEDB5 /* Services */,
 				10826A5A26D006B9005CEDB5 /* ViewModels */,
-				10826A5B26D006C1005CEDB5 /* Views */,
 				10826A6426D0090F005CEDB5 /* Models */,
+				10826A5B26D006C1005CEDB5 /* Views */,
 				10BDA5E526D0130500F6E039 /* Extensions */,
 				10826A2726D0065A005CEDB5 /* AppDelegate.swift */,
 				10826A2926D0065A005CEDB5 /* SceneDelegate.swift */,
@@ -222,6 +224,7 @@
 			children = (
 				103E229326DF25F100947FF7 /* Cells */,
 				10826A2B26D0065A005CEDB5 /* ViewController.swift */,
+				103E229626DF372B00947FF7 /* DetailViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -533,6 +536,7 @@
 				10BDA5F326D0131200F6E039 /* UIViewController+Rx.swift in Sources */,
 				10826A2C26D0065A005CEDB5 /* ViewController.swift in Sources */,
 				10BDA5F826D0131200F6E039 /* Observable+bind.swift in Sources */,
+				103E229726DF372B00947FF7 /* DetailViewController.swift in Sources */,
 				10826A6926D00918005CEDB5 /* EmptyEntity.swift in Sources */,
 				10826A6A26D00918005CEDB5 /* ResponseEntity.swift in Sources */,
 				103E229526DF260400947FF7 /* GhibliCell.swift in Sources */,

@@ -110,7 +110,9 @@ extension ViewController {
 extension ViewController: AnimeRouting {
     
     func routeToDetail(_ model: Ghibli) {
-        
+        let vc = self.storyboard?.instantiateViewController(identifier: "DetailViewController") as! DetailViewController
+        vc.model = model
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 }
 

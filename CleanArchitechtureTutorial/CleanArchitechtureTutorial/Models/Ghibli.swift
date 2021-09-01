@@ -12,6 +12,7 @@ class Ghibli: Mappable {
     
     var title: String?
     var id: String?
+    var releaseDate: String?
     
     required init?(map: Map) {
         
@@ -20,6 +21,7 @@ class Ghibli: Mappable {
     func mapping(map: Map) {
         title <- map["title"]
         id <- map["id"]
+        releaseDate <- map["release_date"]
     }
 }
 
