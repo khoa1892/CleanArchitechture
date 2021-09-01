@@ -1,0 +1,6 @@
+framework module Pods_CleanArchitechtureTutorialTests {
+  umbrella header "Pods-CleanArchitechtureTutorialTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
