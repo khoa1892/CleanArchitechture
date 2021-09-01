@@ -90,17 +90,15 @@ final class AnimeItemViewModelSpec: QuickSpec {
             }
         }
         
-        describe("User click go to room detail") {
+        describe("User click go to anime detail") {
             
-            context("when status room is active") {
-                beforeEach {
-                    sut.clickOnAnimeTrigger.accept(AnimeCellViewModel.init(item: anime))
-                }
-                it("should will route to room detail view") {
-                    expect(mockRouting.invokedRouteToDetailParameters?.0.id) === anime.id
-                    expect(mockRouting.invokedRouteToDetailCount) == 1
-                    expect(mockRouting.invokedRouteToDetail) == true
-                }
+            beforeEach {
+                sut.clickOnAnimeTrigger.accept(AnimeCellViewModel.init(item: anime))
+            }
+            it("should will route to anime detail view") {
+                expect(mockRouting.invokedRouteToDetailParameters?.0.id) === anime.id
+                expect(mockRouting.invokedRouteToDetailCount) == 1
+                expect(mockRouting.invokedRouteToDetail) == true
             }
         }
         
