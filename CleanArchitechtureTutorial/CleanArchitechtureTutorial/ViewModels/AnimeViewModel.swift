@@ -29,7 +29,7 @@ class AnimeViewModel: AnimeItemPresentableListener {
     weak var router: AnimeRouting?
     
     var loadMoreTrigger = PublishRelay<Void>.init()
-    
+    var searchTrigger = PublishRelay<String>.init()
     var clickOnAnimeTrigger = PublishRelay<AnimeCellViewModel>.init()
     
     let disposeBag = DisposeBag()
@@ -79,6 +79,22 @@ extension AnimeViewModel {
         loadMoreTrigger.subscribeNext { [weak self] _ in
             self?.limit += 10
             self?.refreshList()
+        }.disposed(by: disposeBag)
+        
+        searchTrigger.subscribeNext { [weak self] query in
+            
+            if !query.isEmpty {
+                let list = self?.list.filter({ $0.title?.contains(query) ?? false })
+                let cellModels = list?.map({ item in
+                    AnimeCellViewModel.init(item: item)
+                })
+                self?.presenter?.animeCellViewModels.accept(cellModels ?? [])
+            } else {
+                let cellModels = self?.list.map { item in
+                    AnimeCellViewModel.init(item: item)
+                }
+                self?.presenter?.animeCellViewModels.accept(cellModels ?? [])
+            }
         }.disposed(by: disposeBag)
     }
     

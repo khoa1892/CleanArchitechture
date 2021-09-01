@@ -12,6 +12,7 @@ import RxDataSources
 
 protocol AnimeItemPresentableListener: AnyObject {
     var loadMoreTrigger: PublishRelay<Void> { get }
+    var searchTrigger: PublishRelay<String> { get }
     var clickOnAnimeTrigger: PublishRelay<AnimeCellViewModel> { get }
 }
 
@@ -25,6 +26,7 @@ class ViewController: UIViewController, AnimeItemPresentable {
     var listener: AnimeItemPresentableListener?
     
     var animeCellViewModels = BehaviorRelay<[AnimeCellViewModel]>.init(value: [])
+    var isSearchText = BehaviorRelay<[AnimeCellViewModel]?>.init(value: [])
     
     var isShowEmptyView = BehaviorRelay<Bool>.init(value: false)
     
@@ -65,6 +67,8 @@ extension ViewController {
             }
             return self.isCanLoadMore.value
         }.bind(to: listener.loadMoreTrigger).disposed(by: disposeBag)
+        
+        searchBar.rx.text.orEmpty.bind(to: listener.searchTrigger).disposed(by: disposeBag)
     }
     
     private func configurePresenter() {
