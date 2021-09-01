@@ -80,6 +80,16 @@ final class AnimeItemViewModelSpec: QuickSpec {
 //            }
 //        }
         
+        describe("User search by keyword") {
+            beforeEach {
+                sut.searchTrigger.accept("Ca")
+            }
+            it("should presenter will send 1 cellModels") {
+                expect(mockPresenter.invokedAnimeCellViewModelsGetter) == true
+                expect(mockPresenter.animeCellViewModels.value.count) == 1
+            }
+        }
+        
         describe("User click go to room detail") {
             
             context("when status room is active") {

@@ -103,27 +103,24 @@ extension AnimeViewModel {
             return
         }
         
-        buildLoadListingAction.elements.subscribeNext { [weak self] list in
+        buildLoadListingAction.elements.subscribeNext { [weak self] items in
             guard let `self` = self else {
                 return
             }
             let ids = self.list.map({ $0.id })
-            for item in list {
+            var temps = [Ghibli]()
+            for item in items {
                 if !ids.contains(item.id) {
-                    self.list.append(item)
+                    temps.append(item)
                 }
             }
+            self.list += temps
+            if temps.count > 0 {
+                presenter.isCanLoadMore.accept(true)
+            } else {
+                presenter.isCanLoadMore.accept(false)
+            }
         }.disposed(by: disposeBag)
-        
-        buildLoadListingAction.elements.map { [weak self] list in
-            guard let `self` = self else {
-                return true
-            }
-            if (list.isEmpty || list.count < 10) && (!(self.list.isEmpty)) {
-                return false
-            }
-            return true
-        }.bind(to: presenter.isCanLoadMore).disposed(by: disposeBag)
         
         refreshList()
     }
